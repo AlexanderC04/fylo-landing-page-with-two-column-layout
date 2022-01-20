@@ -1,0 +1,76 @@
+.container__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+.container__input--email {
+  padding: 0.8rem;
+  border: 2px solid var(--LightGrayishBlue);
+  border-radius: 0.1rem;
+  color: var(--VeryDarkBlue);
+  order: 1;
+}
+.container__input--submit {
+  padding: 0.8rem;
+  background-color: var(--BrightBlue);
+  color: var(--LightGrayishBlue);
+  font-family: "Raleway", sans-serif;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.1rem;
+  order: 3;
+}
+.container__input--submit:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.container__form-message {
+  display: none;
+  text-align: start;
+  order: 2;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+}
+.container--1 .container__form-message {
+  color: #ff0000;
+}
+.container__access .container__form-message {
+  color: var(--LightGrayishBlue);
+}
+.container__input--submit:focus ~ .container__form-message {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .container--1 .container__form {
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 0rem;
+    padding: 0rem;
+  }
+  .container--1 .container__input--email {
+    margin-bottom: 0rem;
+    width: 45%;
+    min-width: 11rem;
+    order: 1;
+    margin-right: 1rem;
+  }
+  .container--1 .container__input--submit {
+    width: 25%;
+    min-width: 7rem;
+    order: 1;
+  }
+  .container__form-message {
+    width: 100%;
+  }
+  .container__access .container__input--email {
+    width: 25rem;
+  }
+  .container__access .container__input--submit {
+    width: 50%;
+  }
+}
