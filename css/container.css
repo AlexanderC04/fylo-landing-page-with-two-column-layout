@@ -216,6 +216,10 @@
     justify-content: start;
     gap: 10%;
     text-align: start;
+    padding: 5.5rem 3rem;
+  }
+  .container__access .container__title {
+    font-size: 1.8rem;
   }
 }
 @media screen and (min-width: 1025px) {
