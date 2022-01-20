@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: ()
-- Live Site URL: ()
+- Solution URL: (https://github.com/AlexanderC04/fylo-landing-page-with-two-column-layout.git)
+- Live Site URL: (https://alexanderc04.github.io/fylo-landing-page-with-two-column-layout/)
 
 ## My process
 
